@@ -1,0 +1,63 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    font-size: 18px;
+    background-color: #f4f4f4;
+    color:#666666;
+}
+.container {
+    margin-top: 30px;
+}
+
+.tm-flex-center {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.tm-section,
+.tm-section-min-h {
+    min-height: 380px;
+}
+.tm-section {
+    background-color: white;
+}
+.f4{
+    font-size: 4rem;
+}
+
+.f1 {
+    font-size: 1rem;
+    font-style: italic;
+}
+.tm-col-md-reverse {
+    flex-direction: column-reverse;
+}
+
+@media(min-width: 992px) {
+    .tm-col-md-reverse {
+        flex-direction: row;
+    }
+}
+p{   width: 100%;
+    height: auto;
+    word-break:break-all;
+}
+.footer{
+    height:60px;
+}
+.copyright-text {
+    padding: 2px;
+    font-size: 2rem;
+}
